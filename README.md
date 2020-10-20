@@ -1,9 +1,8 @@
 # stylelint-config-fluid
 
-[![License](https://badgen.net/github/license/fluid-project/stylelint-config-fluid/)](https://github.com/fluid-project/stylelint-config-fluid/blob/main/LICENSE.md)
+[![License: BSD 3-Clause](https://badgen.net/github/license/fluid-project/stylelint-config-fluid/)](https://github.com/fluid-project/stylelint-config-fluid/blob/main/LICENSE.md)
 [![Latest Release](https://badgen.net/github/release/fluid-project/stylelint-config-fluid/)](https://github.com/fluid-project/stylelint-config-fluid/releases/latest/)
-![NPM](https://badgen.net/npm/v/stylelint-config-fluid)
-
+[![NPM Package](https://badgen.net/npm/v/stylelint-config-fluid)](https://www.npmjs.com/package/stylelint-config-fluid)
 
 Shareable Stylelint configuration for the Fluid Project.
 
@@ -46,7 +45,7 @@ See the [stylelint user guide](https://stylelint.io/user-guide/configure) for fu
 
 ### Modifying configuration
 
-To modify the stylelint rules provided by this module, update the configuration in the [].stylelintrc.json](.stylelintrc.json) file. See the [stylelint user guide](https://stylelint.io/user-guide/configure) for configuration options.
+To modify the stylelint rules provided by this module, update the configuration in the [.stylelintrc.json](.stylelintrc.json) file. See the [stylelint user guide](https://stylelint.io/user-guide/configure) for configuration options.
 
 ### Testing
 
