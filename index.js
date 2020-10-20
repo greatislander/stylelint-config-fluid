@@ -9,7 +9,7 @@ https://github.com/fluid-project/stylelint-config-fluid/raw/main/LICENSE.md.
 
 "use strict";
 
-const path = require("path");
-const configPath = path.join(__dirname, ".stylelintrc.json");
+var path = require("path");
+var configPath = path.join(__dirname, ".stylelintrc.json");
 
 module.exports = require(configPath);
