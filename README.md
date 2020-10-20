@@ -77,3 +77,21 @@ npm unlink stylelint-config-fluid
 # Run the install again to ensure that all the dependencies are properly installed.
 npm install
 ```
+
+### Releasing
+
+This module uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), enforced with [commitlint](https://commitlint.js.org/). This facilitates releasing new versions of the module. To cut a release, run:
+
+```bash
+npm run release
+```
+
+This will tag an appropriate [semantic version](https://semver.org) based on the nature of the recent commits to the project and update [the changelog](CHANGELOG.md).
+
+You will then need to publish the updated version to the [npm registry](http://npmjs.com). This requires an npm account with appropriate maintainer permissions. To publish the module, run:
+
+```bash
+npm publish
+```
+
+For more information on publishing to npm, see the [npm publish documentation](https://docs.npmjs.com/cli/publish).
