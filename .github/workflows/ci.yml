@@ -6,22 +6,46 @@ on:
       - main
   pull_request:
     branches:
-        - main
+      - main
 
 jobs:
-  lint:
-    name: Lint and test
-    runs-on: ubuntu-latest
+  test:
+    timeout-minutes: 20
+
+    strategy:
+      matrix:
+        node-version: [14.x, 15.x]
+
+    runs-on: ${{ matrix.os }}
+
+    env:
+      CI: true
+
     steps:
+    - name: Prepare git
+      run: git config --global core.autocrlf false
+
     - uses: actions/checkout@v2
-    - name: Cache node modules
-      uses: actions/cache@v2
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
       with:
-        path: node_modules
-        key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
-    - name: Install dependencies, and lint JavaScript and JSON files, and run tests
+        node-version: ${{ matrix.node-version }}
+
+    - name: Get npm cache directory
+      id: npm-cache
       run: |
-        npm i
-        npm run lint
-      env:
-        CI: true
+        echo "::set-output name=dir::$(npm config get cache)"
+
+    - uses: actions/cache@v2
+      with:
+        path: ${{ steps.npm-cache.outputs.dir }}
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Lint JS and JSON files
+      run: npm run lint
