@@ -24,9 +24,13 @@ Then, add an `extends` property to your `.stylelintrc.json` file.
 
 ## Extending or Overriding Configuration
 
-When using the stylelint configuration provided by this module, you may have a case where you'd like to adjust or extend the configuration. To do this, add any additional configuration to your own `.stylelintrc.json` file, which extends the one held in this project.
+When using the stylelint configuration provided by this module, you may have a case where you'd like to adjust or extend
+the configuration. To do this, add any additional configuration to your own `.stylelintrc.json` file, which extends the
+one held in this project.
 
-In the following example, we want to change [the indentation rule](https://stylelint.io/user-guide/rules/indentation) to tabs. The default configuration provided by the model sets the `indentation` rule to `4` (four spaces), so we need to extend the configuration with a supplementary `indentation` rule which overrides the default.
+In the following example, we want to change [the indentation rule](https://stylelint.io/user-guide/rules/indentation) to
+tabs. The default configuration provided by the model sets the `indentation` rule to `4` (four spaces), so we need to
+extend the configuration with a supplementary `indentation` rule which overrides the default.
 
 ```json
 {
@@ -45,7 +49,8 @@ See the [stylelint user guide](https://stylelint.io/user-guide/configure) for fu
 
 ### Modifying configuration
 
-To modify the stylelint rules provided by this module, update the configuration in the [.stylelintrc.json](.stylelintrc.json) file. See the [stylelint user guide](https://stylelint.io/user-guide/configure) for configuration options.
+To modify the stylelint rules provided by this module, update the configuration in the [.stylelintrc.json](.stylelintrc.json)
+file. See the [stylelint user guide](https://stylelint.io/user-guide/configure) for configuration options.
 
 ### Testing
 
@@ -80,15 +85,18 @@ npm install
 
 ### Releasing
 
-This module uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), enforced with [commitlint](https://commitlint.js.org/). This facilitates releasing new versions of the module. To cut a release, run:
+This module uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), enforced with [commitlint](https://commitlint.js.org/).
+This facilitates releasing new versions of the module. To cut a release, run:
 
 ```bash
 npm run release
 ```
 
-This will tag an appropriate [semantic version](https://semver.org) based on the nature of the recent commits to the project and update [the changelog](CHANGELOG.md).
+This will tag an appropriate [semantic version](https://semver.org) based on the nature of the recent commits to the
+project and update [the changelog](CHANGELOG.md).
 
-You will then need to publish the updated version to the [npm registry](http://npmjs.com). This requires an npm account with appropriate maintainer permissions. To publish the module, run:
+You will then need to publish the updated version to the [npm registry](http://npmjs.com). This requires an npm account
+with appropriate maintainer permissions. To publish the module, run:
 
 ```bash
 npm publish
