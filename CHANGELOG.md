@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/fluid-project/stylelint-config-fluid/compare/0.2.0...v1.0.0) (2022-10-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* update dependencies (Q4 2022)
+
+### Features
+
+* update dependencies (Q4 2022) ([b2fcccb](https://github.com/fluid-project/stylelint-config-fluid/commit/b2fcccbd2bc04075724258cc32424c40780dff49))
+
 ### [0.2.1](https://github.com/fluid-project/stylelint-config-fluid/compare/0.2.0...0.2.1) (2021-05-04)
 
 ## [0.2.0](https://github.com/fluid-project/stylelint-config-fluid/compare/0.1.0...0.2.0) (2021-04-16)
