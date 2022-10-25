@@ -86,14 +86,10 @@ npm install
 ### Releasing
 
 This module uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), enforced with [commitlint](https://commitlint.js.org/).
-This facilitates releasing new versions of the module. To cut a release, run:
+This facilitates releasing new versions of the module. Release pull requests are generated using [Release Please](https://github.com/google-github-actions/release-please-action).
 
-```bash
-npm run release
-```
-
-This will tag an appropriate [semantic version](https://semver.org) based on the nature of the recent commits to the
-project and update [the changelog](CHANGELOG.md).
+To cut a release, review and merge the release pull request. This will tag an appropriate [semantic version](https://semver.org)
+based on the nature of the recent commits to the project and update [the changelog](CHANGELOG.md).
 
 You will then need to publish the updated version to the [npm registry](http://npmjs.com). This requires an npm account
 with appropriate maintainer permissions. To publish the module, run:
