@@ -1,4 +1,9 @@
 {
+    "eslint": {
+        "js": {
+            "includes": ["./index.js"]
+        }
+    },
     "markdownlint": {
         "excludes": [
             "./CHANGELOG.md"
