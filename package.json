@@ -33,6 +33,6 @@
         "@commitlint/config-conventional": "17.1.0",
         "eslint": "8.26.0",
         "fluid-lint-all": "1.2.2",
-        "husky": "8.0.1"
+        "husky": "8.0.3"
     }
 }
