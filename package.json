@@ -31,7 +31,7 @@
     "devDependencies": {
         "@commitlint/cli": "17.8.1",
         "@commitlint/config-conventional": "17.8.1",
-        "eslint": "8.26.0",
+        "eslint": "8.57.0",
         "fluid-lint-all": "1.2.11",
         "husky": "8.0.3"
     }
