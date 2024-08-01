@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "lint": "fluid-lint-all",
-        "prepare": "husky install"
+        "prepare": "husky"
     },
     "repository": {
         "type": "git",
@@ -33,6 +33,6 @@
         "@commitlint/config-conventional": "17.8.1",
         "eslint": "8.57.0",
         "fluid-lint-all": "1.2.11",
-        "husky": "8.0.3"
+        "husky": "9.1.4"
     }
 }
