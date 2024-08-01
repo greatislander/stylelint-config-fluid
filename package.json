@@ -29,8 +29,8 @@
         "stylelint-scss": "4.7.0"
     },
     "devDependencies": {
-        "@commitlint/cli": "17.8.1",
-        "@commitlint/config-conventional": "17.8.1",
+        "@commitlint/cli": "19.3.0",
+        "@commitlint/config-conventional": "19.2.2",
         "eslint": "8.57.0",
         "fluid-lint-all": "1.2.11",
         "husky": "9.1.4"
