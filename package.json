@@ -1,6 +1,6 @@
 {
     "name": "stylelint-config-fluid",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "Shareable Stylelint configuration for the Fluid Project.",
     "main": "index.js",
     "scripts": {
